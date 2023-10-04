@@ -27,3 +27,10 @@ let dayToMoon = hoursToMoon;
 
 // Print the results of the trip to the moon below
 console.log(shuttleName + " will take " + dayToMoon + " days to reach Moon");
+
+
+// ignore below
+
+const input = require('readline-sync');
+
+let info = input.question("Question text... ");
