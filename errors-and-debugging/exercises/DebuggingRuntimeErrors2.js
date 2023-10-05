@@ -1,5 +1,3 @@
-// fix the runtime error in a longer code sample.
-
 let launchReady = false;
 let fuelLevel = 27000;
 
@@ -16,7 +14,7 @@ if (launchReady) {
    console.log("Fed parrot...");
    console.log("6, 5, 4...");
    console.log("Ignition...");
-   console.log("3, 2, 1...");
+   consoul.log("3, 2, 1...");
    console.log("Liftoff!");
 } else {
    console.log("Launch scrubbed.");
