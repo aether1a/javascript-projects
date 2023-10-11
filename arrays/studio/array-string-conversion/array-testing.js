@@ -10,9 +10,20 @@ function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
 	let check;
 	let output;
-	//TODO: 2. write the code required for this step
 
-	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
+	
+	//TODO: 2. write the code required for this step
+	for (let i = 0; i < strings.length; i++) {
+		let str = strings[i];
+	  
+		if (str.includes(',')) {
+		  let stringArray = str.split(',');
+		  stringArray.reverse();
+		  strings[i] = stringArray.join(',');
+		}
+	  }
+	  console.log(strings);
+
 	return output;
 }
 
@@ -21,7 +32,9 @@ function semiDash() {
 	let check;
 	let output;
 //TODO: write the code required for this step
-
+if (strings.includes(';')) {
+	console.log(strings.split(';').sort().join('-'));
+  }
   
 	return output;
 }
@@ -31,7 +44,9 @@ function reverseSpaces() {
 	let check;
 	let output;
   //TODO: write the code required for this step
-
+  if (strings.includes(' ')) {
+	console.log(strings.split(' ').sort().reverse().join(' '));
+  }
 	return output;
 }
 
@@ -40,7 +55,9 @@ function commaSpace() {
 	let check;
 	let output;
 	//TODO: write the code required for this step
-  
+	if (strings.includes(', ')) {
+		console.log(strings.split(', ').reverse().join(','));
+	  }
 	return output;
 }
 
