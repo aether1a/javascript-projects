@@ -4,7 +4,22 @@ let holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
 //Explore the methods concat, slice, reverse, and sort to determine which ones alter the original array.
 
 //1) Print the result of using concat on the two arrays. Does concat alter the original arrays? Verify this by printing holdCabinet1 after using the method.
-
+let tools = holdCabinet1.concat(holdCabinet2);
+console.log(tools);
+// it does not, it stores the new values under 'tools'
+console.log(holdCabinet1);
 //2) Print a slice of two elements from each array. Does slice alter the original arrays?
-
+let misc = holdCabinet1.slice(0,2);
+let misc2 = holdCabinet2.slice(3,5);
+console.log(misc);
+console.log(holdCabinet1);
+console.log(misc2);
+console.log(holdCabinet2);
+// again, it does not
 //3) reverse the first array, and sort the second. What is the difference between these two methods? Do the methods alter the original arrays?
+holdCabinet1.reverse();
+console.log(holdCabinet1);
+holdCabinet2.sort();
+console.log(holdCabinet2);
+// sort() sorts the elements alphabetically and in ascending order, while reverse() simply puts them in opposite order
+// They both overwrite the original array
