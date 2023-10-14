@@ -4,7 +4,7 @@ const launchcode = require('../index.js');
 describe ("Testing launchcode", function(){
 
     // Write your unit tests here!
-test("testing launchcode", function(){
+test("testing launchcode", function(){``
   expect(launchcode.organization).toBe("nonprofit");
 });
 test("checks Executive Director", function(){
@@ -19,5 +19,10 @@ test("checks programs", function(){
   expect(launchcode.programsOffered).toContain("Liftoff");
   expect(launchcode.programsOffered.length).toBe(3);
 })
-
 });
+
+describe ("Testing launchoutput", function(){
+  test("When passed a number that is ONLY divisible by 2, launchOutput() returns 'Launch!'", function(){
+    expect(launchOutput).toBe("Launch")
+  })
+ // cn you see me?
