@@ -41,16 +41,20 @@ console.log(reverseCharacters(321));
 // 5. Return the final, reversed array.
 // 6. Be sure to print the results from each test case in order to verify your code.
 
-let arrayEmpty = [];
+function reversedArray(arr) {
+    let reversedArray = [];
+    for (let i=0; i < arr.length; i++) {
+        reversedArray.push(reverseCharacters(arr[i]));
+    }
+    return reversedArray;
+}
 
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
-function reversedArray () {
-    reverseAray
-}
 
+console.log(reversedArray(arrayTest1))
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.

@@ -21,8 +21,19 @@ test("checks programs", function(){
 })
 });
 
-describe ("Testing launchoutput", function(){
-  test("When passed a number that is ONLY divisible by 2, launchOutput() returns 'Launch!'", function(){
-    expect(launchOutput).toBe("Launch")
-  })
- // cn you see me?
+let expectedOutput = {
+  1: "That doesn't work.!",
+  2: "Launch!",
+  3: "Code!",
+  5: "Rocks!",
+  6: "LaunchCode!",
+  10: "Launch Rocks! (CRASH!!!)",
+  15: "Code Rocks!",
+  30: "LaunchCode Rocks!"
+};
+
+test("checks that the launchOutput function returns the correct strings", function() {
+  for (let i in expectedOutput) {
+    expect(launchcode.launchOutput(i)).toEqual(expectedOutput[i]); 
+  }
+});
